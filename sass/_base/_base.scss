@@ -10,7 +10,7 @@
   
   body {
     font-family: Nunito;
-    font-size: 16px;
+    font-size: $font-size;
   }
   
   ul, li {
@@ -20,10 +20,10 @@
   a {
     text-decoration: none;
     color: $cor-primaria;
+  }
   
-    &:hover {
-      color: #3c6360;
-    }
+  a:hover {
+    color: #3c6360;
   }
   
   .container {
@@ -32,9 +32,20 @@
     @media (max-width: 960px) {
         width: 100%;
         padding: 0 4%;
-      }
+    }
   }
   
   .transition {
     transition: all 1s;
+  }
+  
+  // Exemplo de if
+  .classe-teste{
+    @if 3>4{
+      width: 10px;
+    }@else {
+      width: 50px;
+    }
+    width: if(condicao, valor se verdade, valor se false);
+    width: if(if 3>4, 10px, 50px);
   }
