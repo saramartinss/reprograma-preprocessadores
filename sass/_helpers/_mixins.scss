@@ -23,7 +23,7 @@ border-radius: $raio;
             @content;
         }
     } @else if $tipo == tablet {
-        @media screen and (max-width: 980px) {
+        @media screen and (max-width: 960px) {
             @content;
         }
     } @else {

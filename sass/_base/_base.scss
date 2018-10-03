@@ -19,7 +19,7 @@
   
   a {
     text-decoration: none;
-    color: $cor-primaria;
+    color: cor(primaria);
   }
   
   a:hover {
@@ -29,7 +29,7 @@
   .container {
     width: 960px;
     margin: 0 auto;
-    @media (max-width: 960px) {
+    @include responsivo(tablet) {
         width: 100%;
         padding: 0 4%;
     }
@@ -46,6 +46,36 @@
     }@else {
       width: 50px;
     }
-    width: if(condicao, valor se verdade, valor se false);
+    // width: if(condicao, valor se verdade, valor se false);
     width: if(if 3>4, 10px, 50px);
   }
+
+  // @for $i from 1 through 10{
+  //   $width: percentage($i/10);
+  //   .col-#{$i} {
+  //     width: $width;
+  //   }
+  // }
+
+  $i: 1;
+  $cols: 8;
+
+  @while $i <= $cols {
+    $width: percentage($i/$cols);
+    .col-#{$i} {
+      width: $width;
+    }   
+    $i: $i + 1;
+  }
+
+  @each $chave, $valor in $cores {
+    .#{$chave} {
+      color: $valor;
+    }
+  }
+
+  @each $fonte, $nome in $fontes {
+    .#{$fonte} {
+      font-family: $nome;
+    }
+  } 

@@ -49,7 +49,7 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .container {
     width: 100%;
     padding: 0 4%;
@@ -63,8 +63,63 @@ a:hover {
 
 .classe-teste {
   width: 50px;
-  width: valor se verdade;
   width: 10px;
+}
+
+.col-1 {
+  width: 12.5%;
+}
+
+.col-2 {
+  width: 25%;
+}
+
+.col-3 {
+  width: 37.5%;
+}
+
+.col-4 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 62.5%;
+}
+
+.col-6 {
+  width: 75%;
+}
+
+.col-7 {
+  width: 87.5%;
+}
+
+.col-8 {
+  width: 100%;
+}
+
+.primaria {
+  color: #829dad;
+}
+
+.auxiliar {
+  color: #000;
+}
+
+.branco {
+  color: #FFF;
+}
+
+.principal {
+  font-family: "Nunito";
+}
+
+.auxiliar {
+  font-family: "Arial, sans serif";
+}
+
+.base {
+  font-family: "Montserrat";
 }
 
 .btn {
@@ -153,7 +208,7 @@ a:hover {
   letter-spacing: 8px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 600px) {
   .banner__title {
     font-size: 60px;
   }
@@ -262,7 +317,7 @@ a:hover {
   margin-top: 80px;
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .destination__title {
     margin-top: 0;
   }
@@ -276,7 +331,7 @@ a:hover {
   max-width: 80%;
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .destination__border {
     display: none;
   }

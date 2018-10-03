@@ -1,0 +1,12 @@
+@function adapta-tamanho($multiplicador){
+    @return $multiplicador * $font-size;
+}
+
+@function cor($color-name){
+    @return map-get($cores, $color-name);
+}
+
+@function fonte($tipo-da-fonte){
+    @return map-get($fontes, $tipo-da-fonte);
+}
+

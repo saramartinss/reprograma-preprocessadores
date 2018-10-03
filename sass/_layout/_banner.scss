@@ -21,7 +21,7 @@
       font-weight: 100;
       padding-top: 80px;
       letter-spacing: 8px;
-      @include responsivo(tablet){
+      @include responsivo(phone){
         font-size: 60px;
       }
       @media (max-width: 850px) { 
